@@ -5,13 +5,24 @@ export const GET_PLAYER_BY_SLUG = gql`
     Player(slug: $slug) {
       displayName
       age
+      position
+      shirtNumber
+      activeClub {
+        name
+      }
     }
   }
 `;
 
+// # Write your query or mutation here
 // query PlayerBySlug($slug: String!) {
 //   player(slug: $slug) {
 //     displayName
 //     age
+//     position
+//     shirtNumber
+//     activeClub {
+//       name
+//     }
 //   }
 // }
