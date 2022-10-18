@@ -20,7 +20,15 @@ const Home: NextPage = () => {
           query: { slug: "danilo-pereira-da-silva" },
         }}
       >
-        <a>Danilo</a>
+        <h3>Danilo</h3>
+      </Link>
+      <Link
+        href={{
+          pathname: "/player/[slug]",
+          query: { slug: "xavi-simons" },
+        }}
+      >
+        <h3>Xavi Simons</h3>
       </Link>
     </>
   );
